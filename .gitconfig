@@ -1,0 +1,19 @@
+[user]
+	name = auhallet
+	email = austin.hallett-doughty@silabs.com
+[color]
+	ui = true
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+[core]
+	editor = code --wait
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[pull]
+	rebase = false
