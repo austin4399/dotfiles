@@ -14,7 +14,6 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -77,20 +76,23 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 
-source /Users/auhallet/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# enable python env manager
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
 
 plugins=(
     git
-    zsh-autosuggestions
+    pyenv
     iterm2
 )
-fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
-source $ZSH/oh-my-zsh.sh
 
 # User configuration
+source /Users/auhallet/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+# echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
 
 # export MANPATH="/usr/local/man:$MANPATH"
-
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -114,19 +116,10 @@ source $ZSH/oh-my-zsh.sh
 alias zshconf="mate ~/.zshrc"
 alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 # enable node version manager
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
-# enable python env manager
-export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
 
-
-autoload -Uz compinit
-zstyle ':completion:*' menu select
-fpath+=~/.zfunc
 # enable sphinx-doc
 export PATH="/opt/homebrew/opt/sphinx-doc/bin:$PATH"
+source /opt/homebrew/opt/spaceship/spaceship.zsh
