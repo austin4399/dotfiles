@@ -80,8 +80,7 @@ plugins=(
     iterm2
 )
 
-# User configuration
-source /Users/auhallet/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 # git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 # echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
 
@@ -114,3 +113,4 @@ source $(brew --prefix nvm)/nvm.sh
 # enable sphinx-doc
 export PATH="/opt/homebrew/opt/sphinx-doc/bin:$PATH"
 source /opt/homebrew/opt/spaceship/spaceship.zsh
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
