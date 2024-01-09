@@ -1,5 +1,8 @@
 tap "homebrew/bundle"
+brew "go"
+brew "kubernetes-cli"
 brew "nginx"
+brew "minikube"
 brew "nvm"
 brew "postgresql@14"
 brew "pyenv"
