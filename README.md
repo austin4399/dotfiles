@@ -51,6 +51,15 @@ cd ~/.dotfiles && brew bundle
 
 6. Install [FiraCode](https://github.com/tonsky/FiraCode) font for spaceship prompt
 
+7. Create symbolic link for vscode settings
+
+```zsh
+# first remove created settings file
+rm ~/Library/Application\ Support/code/User/settings.json
+# create symlink
+ln -s ~/.dotfiles/vscode/settings.json ~/Library/Application\ Support/code/User/settings.json
+```
+
 ## TODO List
 
 - Learn how to use [`defaults`](https://macos-defaults.com/#%F0%9F%99%8B-what-s-a-defaults-command) to record and restore System Preferences and other macOS configurations.

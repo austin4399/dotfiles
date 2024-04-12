@@ -1,0 +1,146 @@
+{
+    "test": "test",
+    "workbench.colorTheme": "poimandres",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "explorer.confirmDelete": false,
+    "explorer.compactFolders": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "markdown-preview-enhanced.previewTheme": "github-light.css",
+    "workbench.iconTheme": "icons",
+    "workbench.preferredDarkColorTheme": "Kimbie Dark",
+    "workbench.preferredHighContrastColorTheme": "Cobalt2",
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "kite.showWelcomeNotificationOnStartup": false,
+    "explorer.confirmDragAndDrop": false,
+    "editor.inlineSuggest.enabled": true,
+    "github.copilot.enable": {
+        "*": true,
+        "yaml": false,
+        "plaintext": true,
+        "markdown": false,
+        "typescript": true,
+        "vue": true,
+        "python": true
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "json.maxItemsComputed": 100000,
+    "thunder-client.codeSnippetLanguage": "python-requests",
+    "[vue]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "diffEditor.codeLens": true,
+    "diffEditor.wordWrap": "on",
+    "bracket-pair-colorizer-2.depreciation-notice": false,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "git.confirmSync": false,
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "git.suggestSmartCommit": false,
+    "terminal.integrated.fontFamily": "'Fira code', monospace",
+    "gitlens.advanced.repositorySearchDepth": 10,
+    "git.repositoryScanMaxDepth": 10,
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "powershell.promptToUpdatePowerShell": false,
+    "vetur.completion.tagCasing": "initial",
+    "vetur.dev.logLevel": "DEBUG",
+    "editor.formatOnSave": true,
+    "material-icon-theme.folders.color": "#42a5f5",
+    "prettier.jsxSingleQuote": true,
+    "jest.autoRun": {},
+    "redhat.telemetry.enabled": false,
+    "projectManager.any.baseFolders": ["/Users/auhallet/base/projects"],
+    "projectManager.vscode.maxDepthRecursion": 1,
+    "projectManager.git.baseFolders": ["~/prj"],
+    "projectManager.filterOnFullPath": true,
+    "rapidapi.terminalLink.enabled": false,
+    "npm.keybindingsChangedWarningShown": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "prettier.tabWidth": 4,
+    "editor.stickyScroll.enabled": true,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnType": true
+    },
+    "[yaml]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "git.autofetch": true,
+    "totalTypeScript.hiddenTips": [
+        "in-operator-narrowing",
+        "function-return-type",
+        "typing-function-parameters",
+        "union-type",
+        "passing-generics-to-types",
+        "basic-types",
+        "undefined-keyword",
+        "any-type",
+        "record-utility-type",
+        "array-type",
+        "variable-type-annotation",
+        "ts-object-type",
+        "interface-declaration",
+        "type-alias-declaration",
+        "optional-object-property",
+        "null-keyword",
+        "omit-utility-type",
+        "literal-type",
+        "required-utility-type",
+        "partial-utility-type",
+        "typeof",
+        "type-alias-with-generics",
+        "as-assertion",
+        "tuple-type"
+    ],
+    "totalTypeScript.hideAllTips": true,
+    "totalTypeScript.hideBasicTips": true,
+    "workbench.sideBar.location": "right",
+    "typescript.tsdk": "./node_modules/typescript/lib",
+    "git.ignoreRebaseWarning": true,
+    "sonarlint.connectedMode.connections.sonarqube": [
+        {
+            "serverUrl": "https://sonarqube.silabs.net",
+            "connectionId": "https-sonarqube-silabs-net"
+        }
+    ],
+    "liveServer.settings.donotShowInfoMsg": true,
+    "gitlens.gitCommands.skipConfirmations": [
+        "fetch:command",
+        "switch:command",
+        "stash-push:command"
+    ],
+    "[dockercompose]": {
+        "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+    },
+    "sonarlint.rules": {
+        "docker:S6437": {
+            "level": "off"
+        },
+        "docker:S4830": {
+            "level": "off"
+        },
+        "python:S6553": {
+            "level": "off"
+        }
+    },
+    "editor.minimap.enabled": false,
+    "debug.onTaskErrors": "debugAnyway",
+    "vsicons.dontShowNewVersionMessage": true,
+    "docker.containers.label": "ContainerName",
+    "editor.fontFamily": "'Fira Code', monospace",
+    "editor.fontLigatures": true
+}
