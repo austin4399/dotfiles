@@ -52,6 +52,7 @@ cd ~/.dotfiles && brew bundle
 6. Install [FiraCode](https://github.com/tonsky/FiraCode) font for spaceship prompt
 
 7. Create symbolic link for vscode settings
+
 ```zsh
 # first remove created settings file
 rm ~/Library/Application\ Support/code/User/settings.json
