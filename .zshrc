@@ -112,6 +112,9 @@ source $(brew --prefix nvm)/nvm.sh
 
 # enable sphinx-doc
 export PATH="/opt/homebrew/opt/sphinx-doc/bin:$PATH"
+# source spaceship prompt
 source /opt/homebrew/opt/spaceship/spaceship.zsh
+# source zsh-syntax-highlighting
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# add open jdk to path
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"

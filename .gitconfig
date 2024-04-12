@@ -1,6 +1,7 @@
 [user]
-	name = auhallet
-	email = austin.hallett-doughty@silabs.com
+	# set in ~/.gitconfig_local
+[include]
+    path = ~/.gitconfig_local
 [color]
 	ui = true
 [alias]

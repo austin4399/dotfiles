@@ -14,7 +14,19 @@ xcode-select --install
 ssh-keygen -t ed25519 -C "github@email.com"
 ```
 
-3. Clone repo into new hidden directory.
+3. Add local git config with username and email
+
+```zsh
+touch ~/.gitconfig_local
+```
+
+```toml
+[user]
+    name = example
+    email = github@email.com
+```
+
+4. Clone repo into new hidden directory.
 
 ```zsh
 # Use SSH (if set up)...
@@ -24,7 +36,7 @@ git clone git@github.com:austinhallett/dotfiles.git ~/.dotfiles
 git clone https://github.com/austinhallett/dotfiles.git ~/.dotfiles
 ```
 
-4. Create symlinks in the Home directory to the real files in the repo.
+5. Create symlinks in the Home directory to the real files in the repo.
 
 ```zsh
 # There are better and less manual ways to do this;
@@ -34,7 +46,7 @@ ln -s ~/.dotfiles/.zshrc ~/.zshrc
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 ```
 
-5. Install Homebrew, followed by the software listed in the Brewfile.
+6. Install Homebrew, followed by the software listed in the Brewfile.
 
 ```zsh
 # These could also be in an install script.
@@ -49,9 +61,9 @@ brew bundle --file ~/.dotfiles/Brewfile
 cd ~/.dotfiles && brew bundle
 ```
 
-6. Install [FiraCode](https://github.com/tonsky/FiraCode) font for spaceship prompt
+7. Install [FiraCode](https://github.com/tonsky/FiraCode) font for spaceship prompt
 
-7. Create symbolic link for vscode settings
+8. Create symbolic link for vscode settings
 
 ```zsh
 # first remove created settings file
